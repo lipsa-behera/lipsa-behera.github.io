@@ -7,6 +7,7 @@
   position: relative;
   min-height: 100vh;
   color: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
   /* overflow: hidden; */
   /* background-color: rgb(93, 133, 168); */
   background-color: white;
