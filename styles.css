@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  min-height: 100vh;
+  color: rgba(0, 0, 0, 0.7);
+  /* overflow: hidden; */
+  /* background-color: rgb(93, 133, 168); */
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+.left-pane {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 20%;
+
+  /* position: absolute; */
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+.middle-pane {
+  /* background-color: rgb(148, 216, 196); */
+  background-image: url("./shiva2.jpeg");
+  background-size: 100vw;
+  background-color: rgba(255, 255, 255, 0.97);
+  background-blend-mode: lighten;
+
+  box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.9),
+    0px 0px 7px -2px rgba(0, 0, 0, 0.5),
+    0px 0px 10px -2px rgba(0, 0, 0, 0.2);
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 0.7rem;
+  line-height: 1.7rem;
+  min-height: 100vh;
+  overflow-y: scroll;
+  width: 100vw;
+
+  position: absolute;
+  z-index: 100;
+  top: 0;
+
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+.huge {
+  margin: 4rem 0;
+}
+.right-pane {
+  background-image: url("trishul.png");
+  background-size: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  background-blend-mode: lighten;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 70%;
+
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 30vw;
+}
