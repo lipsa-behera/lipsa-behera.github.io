@@ -44,9 +44,9 @@ function touchEnd() {
   const movedBy = currentTranslate - previousTranslate
 
   if (previousTranslate === showMiddlePane) {
-    if (movedBy > 20) {
+    if (movedBy > 50) {
       currentTranslate = showLeftPane
-    } else if (movedBy < -20) {
+    } else if (movedBy < -50) {
       currentTranslate = showRightPane
     } else {
       currentTranslate = showMiddlePane
@@ -54,7 +54,7 @@ function touchEnd() {
   }
 
   if (previousTranslate === showLeftPane) {
-    if (movedBy < -20) {
+    if (movedBy < -50) {
       currentTranslate = showMiddlePane
     } else {
       currentTranslate = showLeftPane
@@ -62,7 +62,7 @@ function touchEnd() {
   }
 
   if (previousTranslate === showRightPane) {
-    if (movedBy > 20) {
+    if (movedBy > 50) {
       currentTranslate = showMiddlePane
     } else {
       currentTranslate = showRightPane
